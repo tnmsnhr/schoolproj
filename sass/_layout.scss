@@ -1,0 +1,35 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+    @include respond(tab-land){
+        width: 90%;
+    }
+
+}
+
+.container__fluid {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav__area {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.247);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+    @include respond(tab-land){
+        padding: 10px 20px;
+    }
+
+    @include respond(tab-port){
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+}

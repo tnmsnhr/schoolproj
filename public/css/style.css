@@ -1,0 +1,500 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #303030;
+  font-weight: 400;
+  letter-spacing: 1px; }
+
+.margin-bottom-sm {
+  margin-bottom: 10px; }
+
+.margin-bottom-md {
+  margin-bottom: 20px; }
+
+.margin-bottom-lg {
+  margin-bottom: 50px; }
+
+.margin-top-sm {
+  margin-top: 10px; }
+
+.margin-top-md {
+  margin-top: 20px; }
+
+.margin-top-lg {
+  margin-top: 50px; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media (max-width: 1150px) {
+    .container {
+      width: 90%; } }
+
+.container__fluid {
+  width: 90%;
+  margin: 0 auto; }
+
+.nav__area {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.247);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px; }
+  @media (max-width: 1150px) {
+    .nav__area {
+      padding: 10px 20px; } }
+  @media (max-width: 1000px) {
+    .nav__area {
+      display: block;
+      width: 100%;
+      position: relative; } }
+
+.navbar__hidden {
+  display: none; }
+
+.navbar__left {
+  display: flex; }
+  @media (max-width: 1000px) {
+    .navbar__left {
+      display: block;
+      width: 100%;
+      text-align: center; } }
+  .navbar__left .hamburger__icon {
+    font-size: 2rem;
+    margin-right: 60px;
+    display: none; }
+    @media (max-width: 1150px) {
+      .navbar__left .hamburger__icon {
+        display: none; } }
+    @media (max-width: 1000px) {
+      .navbar__left .hamburger__icon {
+        display: inline-block;
+        position: absolute;
+        left: 50px;
+        top: 0; } }
+  .navbar__left .navbar__brand {
+    color: #FF3A58;
+    font-weight: 800;
+    font-size: 2rem; }
+    @media (max-width: 1150px) {
+      .navbar__left .navbar__brand {
+        font-size: 1.5rem; } }
+
+.navbar__right .menu__items {
+  display: flex;
+  align-items: center; }
+  @media (max-width: 1000px) {
+    .navbar__right .menu__items {
+      display: block;
+      background-color: #fff;
+      text-align: center;
+      padding: 20px 0; } }
+  .navbar__right .menu__items .menu__item {
+    list-style: none;
+    padding: 2px;
+    cursor: pointer;
+    font-family: 'Patrick Hand';
+    font-size: 1.2rem;
+    font-weight: bold; }
+    .navbar__right .menu__items .menu__item:not(:last-child) {
+      margin-right: 20px; }
+    .navbar__right .menu__items .menu__item--button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.4rem;
+      border: 1px solid #303030;
+      border-radius: 50px;
+      margin-left: 10px;
+      width: 150px;
+      padding-right: 25px; }
+      .navbar__right .menu__items .menu__item--button i {
+        font-size: 3rem;
+        color: #BFFE8A; }
+      @media (max-width: 1000px) {
+        .navbar__right .menu__items .menu__item--button {
+          position: absolute;
+          right: 50px;
+          top: 10px;
+          font-size: 1rem;
+          width: 120px;
+          padding-right: 10px; }
+          .navbar__right .menu__items .menu__item--button i {
+            font-size: 2rem;
+            color: #BFFE8A; } }
+    @media (max-width: 1000px) {
+      .navbar__right .menu__items .menu__item {
+        padding: 10px; } }
+
+.breadcrumbs__area .breadcrumbs {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  color: #b4b4b4; }
+  .breadcrumbs__area .breadcrumbs .breadcrumb:not(:last-child) {
+    margin-right: 10px; }
+  .breadcrumbs__area .breadcrumbs .breadcrumb i {
+    font-size: 0.6rem; }
+
+header {
+  margin-bottom: 150px; }
+
+.header__main .primary--heading {
+  letter-spacing: 3px; }
+
+.header__main .header__subheading {
+  font-size: 1.1rem;
+  font-weight: bold; }
+
+.header__main .header__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  @media (max-width: 1000px) {
+    .header__main .header__content {
+      display: block; } }
+  .header__main .header__content--left .hero__image-area {
+    position: relative;
+    margin-right: 3rem; }
+    .header__main .header__content--left .hero__image-area .hero__image-title {
+      position: absolute;
+      text-transform: uppercase;
+      color: #fff;
+      top: 10px;
+      right: 10px;
+      font-size: 1.3rem; }
+    .header__main .header__content--left .hero__image-area .hero__image {
+      border-radius: 5px; }
+    .header__main .header__content--left .hero__image-area .hero__image-button {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      outline: none;
+      padding: 10px 30px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      font-family: 'Patrick Hand';
+      font-size: 1.3rem;
+      font-weight: bold; }
+      .header__main .header__content--left .hero__image-area .hero__image-button i {
+        margin-right: 10px; }
+  @media (max-width: 1000px) {
+    .header__main .header__content--left {
+      display: block;
+      width: 100%; }
+      .header__main .header__content--left .hero__image {
+        width: 100%; }
+      .header__main .header__content--left .hero__image-area {
+        margin-right: 0; } }
+  .header__main .header__content--right h2 {
+    font-weight: 400; }
+  .header__main .header__content--right .live {
+    color: #b4b4b4; }
+  .header__main .header__content--right .event__date {
+    font-weight: 600; }
+  .header__main .header__content--right .slot__area .slot__heading {
+    color: #b4b4b4;
+    margin-bottom: 5px; }
+  .header__main .header__content--right .slot__area .slot__items {
+    display: flex; }
+    .header__main .header__content--right .slot__area .slot__items .slot__item {
+      list-style: none;
+      text-align: center; }
+      .header__main .header__content--right .slot__area .slot__items .slot__item:not(:last-child) {
+        margin-right: 15px; }
+      .header__main .header__content--right .slot__area .slot__items .slot__item-time {
+        border: 1px solid #303030;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        width: 100px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 5px; }
+      .header__main .header__content--right .slot__area .slot__items .slot__item .seats__left {
+        font-size: 0.9rem;
+        letter-spacing: 0px;
+        font-weight: 400;
+        color: #b4b4b4; }
+  @media (max-width: 1000px) {
+    .header__main .header__content--right {
+      margin-top: 30px; } }
+
+.fees__area .fee__heading {
+  color: #b4b4b4; }
+
+.fees__area .price__button {
+  padding: 10px 20px;
+  box-shadow: 3px 3px 5px rgba(117, 117, 117, 0.37);
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #303030;
+  font-size: 1.3rem;
+  letter-spacing: 0px;
+  margin-right: 10px;
+  outline: none; }
+  .fees__area .price__button .original-price {
+    color: #6f8ad3;
+    font-size: 0.9rem; }
+
+.fees__area .points__button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #fff;
+  font-weight: bold;
+  color: #FF3A58;
+  letter-spacing: 0px;
+  text-decoration: underline;
+  outline: none; }
+
+.call-to-action-area {
+  display: flex;
+  justify-content: space-between; }
+  .call-to-action-area .social-media-button {
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    font-family: 'Patrick Hand';
+    font-size: 1.5rem;
+    letter-spacing: 0px;
+    border: 2px solid #FF3A58;
+    color: #FF3A58; }
+  .call-to-action-area .book__button {
+    flex: 2;
+    margin-right: 20px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF3A58;
+    font-family: 'Patrick Hand';
+    font-size: 1.5rem;
+    letter-spacing: 0px;
+    color: #fff; }
+
+.feature__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #b4b4b4;
+  padding: 5px 20px 5px 5px;
+  flex-wrap: wrap;
+  margin-right: 20px; }
+  @media (max-width: 1000px) {
+    .feature__item {
+      margin-bottom: 30px; } }
+  .feature__item--heading {
+    font-size: 1.1rem;
+    font-weight: bold; }
+    @media (max-width: 1150px) {
+      .feature__item--heading {
+        font-size: 1rem; } }
+  .feature__item .point__count {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    color: #8A7A00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #FFE30D, #FFEB4F);
+    font-weight: bold;
+    margin-right: 20px; }
+
+.feature__item--round {
+  border-radius: 50px; }
+
+.feature__item--rect {
+  border-radius: 50px 10px 10px 50px; }
+
+.marker {
+  width: 50px;
+  height: 5px;
+  background-color: #A0E467;
+  display: block;
+  margin-bottom: 5px; }
+
+.feature__area {
+  font-family: 'Patrick Hand'; }
+  .feature__area .feature__content .upper-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start; }
+    @media (max-width: 1000px) {
+      .feature__area .feature__content .upper-row {
+        display: block; }
+        .feature__area .feature__content .upper-row .goals__section {
+          margin-bottom: 30px; }
+        .feature__area .feature__content .upper-row .badges__section {
+          margin-bottom: 30px; } }
+    .feature__area .feature__content .upper-row .goals {
+      background-color: #6188EA;
+      width: 80px;
+      text-align: center;
+      border-radius: 10px;
+      color: #fff;
+      margin-bottom: 20px; }
+    .feature__area .feature__content .upper-row .badges {
+      background-color: #A0E467;
+      width: 80px;
+      text-align: center;
+      border-radius: 10px;
+      color: #fff;
+      margin-bottom: 20px; }
+  .feature__area .feature__content .lower-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start; }
+    @media (max-width: 1000px) {
+      .feature__area .feature__content .lower-row {
+        display: block; } }
+    .feature__area .feature__content .lower-row .badges {
+      background-color: #AF70FC;
+      width: 80px;
+      text-align: center;
+      border-radius: 10px;
+      color: #fff;
+      margin-bottom: 20px; }
+  .feature__area .feature__subcontent p {
+    font-size: 1rem;
+    color: #7c7c7c; }
+
+.assignments__area .card__area {
+  display: flex; }
+
+.assignments__area .card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1rem rgba(109, 109, 109, 0.205);
+  margin-right: 20px; }
+  .assignments__area .card--image {
+    background-color: #F7F7F7;
+    position: relative;
+    overflow: hidden; }
+    .assignments__area .card--image img {
+      height: 200px; }
+  .assignments__area .card--content {
+    padding: 40px 20px; }
+    .assignments__area .card--content h2 {
+      font-family: 'Lato';
+      font-weight: 400; }
+    .assignments__area .card--content .arrow {
+      float: right; }
+  .assignments__area .card .layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; }
+  .assignments__area .card .layer1 {
+    background-color: #9952fd98; }
+  .assignments__area .card .layer2 {
+    background-color: #339db393; }
+
+.guide__section {
+  display: flex;
+  justify-content: space-between;
+  text-align: center; }
+  .guide__section .guide__card {
+    background: #e3f8fa;
+    padding: 40px 20px;
+    flex: 1; }
+    .guide__section .guide__card:not(:last-child) {
+      margin-right: 10px; }
+    .guide__section .guide__card i {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #FF3A58; }
+    .guide__section .guide__card .card__content h5 {
+      font-family: 'Lato';
+      text-transform: uppercase;
+      margin-bottom: 10px; }
+    .guide__section .guide__card .card__content p {
+      font-family: 'Lato';
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      line-height: 1.1rem;
+      color: #7c7c7c; }
+    .guide__section .guide__card .card__content .step__heading {
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #FF3A58; }
+
+.student__section {
+  position: relative;
+  height: 500px;
+  overflow: hidden; }
+  .student__section .backdrop {
+    object-fit: contain;
+    width: 100%;
+    filter: blur(2px);
+    opacity: 0.5; }
+  .student__section .mobilescreen {
+    position: absolute;
+    width: 30%;
+    top: 0px;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%, 0%); }
+
+footer {
+  background: #635D5D;
+  color: #fff; }
+  footer .footer__button-area {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  footer .footer__button {
+    padding: 10px 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #FF3A58;
+    color: #fff;
+    font-family: 'Patrick Hand';
+    font-size: 1.3rem;
+    margin: 50px 0; }
+  footer .footer__nav {
+    display: flex;
+    justify-content: space-between;
+    height: 200px; }
+    footer .footer__nav p {
+      font-size: 0.6rem;
+      color: #b4b4b4; }
+    footer .footer__nav--item h5 {
+      margin-bottom: 20px;
+      text-transform: uppercase; }
+    footer .footer__nav .nav__item {
+      list-style: none;
+      padding: 5px 0;
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: #b4b4b4; }
+      footer .footer__nav .nav__item i {
+        font-size: 1.3rem;
+        margin-right: 10px; }
+    footer .footer__nav .social--icon i {
+      font-size: 2rem; }
+      footer .footer__nav .social--icon i:not(:last-child) {
+        margin-right: 20px; }
+  footer .footer__bottom {
+    background-color: #5A5555;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400; }

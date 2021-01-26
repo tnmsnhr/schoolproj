@@ -1,0 +1,48 @@
+$color-primary:#FF3A58;
+$color-black:rgb(48, 48, 48);
+$color-grey:rgb(180, 180, 180);
+$color-grey-dark:rgb(124, 124, 124);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: $color-black;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.margin-bottom-sm { margin-bottom: 10px;}
+.margin-bottom-md { margin-bottom: 20px;}
+.margin-bottom-lg { margin-bottom: 50px;}
+
+.margin-top-sm { margin-top: 10px;}
+.margin-top-md { margin-top: 20px;}
+.margin-top-lg { margin-top: 50px;}
+
+@mixin respond($breakpoint){
+    
+    @if $breakpoint == phone {
+        @media (max-width:600px) { @content }
+    };
+
+    @if $breakpoint == big-phone {
+        @media (max-width:800px) { @content }
+    };
+
+    @if $breakpoint == tab-port {
+        @media (max-width: 1000px){@content}
+    };
+
+    @if $breakpoint == tab-land {
+        @media (max-width: 1150px){@content}
+    };
+
+    @if $breakpoint == desktop {
+        @media (min-width: 1300px){@content}
+    };
+}

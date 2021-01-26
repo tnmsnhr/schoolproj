@@ -1,0 +1,678 @@
+// navbar sstyling
+
+.navbar__hidden {
+    display: none;
+}
+
+.navbar__left {
+    display: flex;
+
+    @include respond(tab-port){
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hamburger__icon {
+        font-size: 2rem;
+        margin-right: 60px;
+        display: none;
+
+        @include respond(tab-land){
+            display: none;
+        }
+
+        @include respond(tab-port){
+            display: inline-block;
+            position: absolute;
+            left: 50px;
+            top: 0;
+        }
+    }
+
+    .navbar__brand {
+        color: $color-primary;
+        font-weight: 800;
+        font-size: 2rem;
+
+        @include respond(tab-land){
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.navbar__right {
+
+    .menu__items {
+        display: flex;
+        align-items: center;
+
+        @include respond(tab-port){
+            display: block;
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .menu__item {
+            list-style: none;
+            padding: 2px;
+            cursor: pointer;
+            font-family: 'Patrick Hand';
+            font-size: 1.2rem;
+            font-weight: bold;
+
+            &:not(:last-child){
+                margin-right: 20px;
+            }
+
+            &--button {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 1.4rem;
+                border:1px solid $color-black;
+                border-radius: 50px;
+                margin-left: 10px;
+                width: 150px;
+                padding-right: 25px;
+
+                i {
+                    font-size: 3rem;
+                    color: #BFFE8A;
+                    
+                }
+
+                @include respond(tab-port){
+                    position: absolute;
+                    right: 50px;
+                    top: 10px;
+                    font-size: 1rem;
+                    width: 120px;
+                    padding-right: 10px;
+
+                    i {
+                        font-size: 2rem;
+                        color: #BFFE8A;
+                        
+                    }
+    
+                }
+            }
+
+            @include respond(tab-port){
+                padding: 10px;
+
+            }
+        }
+    }
+}
+
+//Header style 
+
+.breadcrumbs__area {
+    .breadcrumbs {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        color: $color-grey;
+
+        .breadcrumb {
+
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+
+            i {
+                font-size: 0.6rem;
+            }
+
+        }
+    }
+}
+
+header{
+    margin-bottom: 150px;
+}
+
+.header__main {
+    .primary--heading {
+        letter-spacing: 3px;
+    }
+
+    .header__subheading {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .header__content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        @include respond(tab-port){
+            display: block;
+        }
+
+        &--left {
+
+            .hero__image-area {
+                position: relative;
+                margin-right: 3rem;
+                
+
+                .hero__image-title {
+                    position: absolute;
+                    text-transform: uppercase;
+                    color: #fff;
+                    top: 10px;
+                    right: 10px;
+                    font-size: 1.3rem;
+                }
+
+                .hero__image {
+                    border-radius: 5px;
+                }
+
+                .hero__image-button {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 20px;
+                    outline: none;
+                    padding: 10px 30px;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    font-family: 'Patrick Hand';
+                    font-size: 1.3rem;
+                    font-weight: bold;
+
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            @include respond(tab-port){
+                display: block;
+                width: 100%;
+
+                .hero__image {
+                    width: 100%;
+                }
+
+                .hero__image-area {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &--right {
+
+            h2 {
+                font-weight: 400;
+            }
+
+            .live {
+                color: $color-grey;
+            }
+
+            .event__date {
+                font-weight: 600;
+            }
+
+            .slot__area {
+
+                .slot__heading {
+                    color: $color-grey;
+                    margin-bottom: 5px;
+                }
+
+                .slot__items{
+                    display: flex;
+
+                    .slot__item {
+                        list-style: none;
+                        text-align: center;
+
+                        &:not(:last-child){
+                            margin-right: 15px;
+                        }
+
+                        &-time {
+                            border: 1px solid $color-black;
+                            padding: 5px 10px;
+                            border-radius: 20px;
+                            font-size: 0.8rem;
+                            width: 100px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            margin-bottom: 5px;
+                        }
+
+                        .seats__left {
+                            font-size: 0.9rem;
+                            letter-spacing: 0px;
+                            font-weight: 400;
+                            color: $color-grey;
+                        }
+                    }
+
+                }
+
+            }
+
+            @include respond(tab-port){
+                margin-top: 30px;
+            }
+
+        }
+    }
+}
+
+.fees__area {
+
+    .fee__heading {
+        color: $color-grey;
+    }
+
+    .price__button {
+        padding: 10px 20px;
+        box-shadow: 3px 3px 5px rgba(117, 117, 117, 0.37);
+        border: none;
+        background-color: #fff;
+        border-radius: 5px;
+        font-weight: bold;
+        color: $color-black;
+        font-size: 1.3rem;
+        letter-spacing: 0px;
+        margin-right: 10px;
+        outline: none;
+
+        .original-price {
+            color: rgb(111, 138, 211);
+            font-size: 0.9rem;
+        }
+    }
+
+    .points__button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #fff;
+        font-weight: bold;
+        color: $color-primary;
+        letter-spacing: 0px;
+        text-decoration: underline;
+        outline: none;
+    }
+}
+
+.call-to-action-area {
+    display: flex;
+    justify-content: space-between;
+
+
+    .social-media-button {
+        padding: 10px;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        background-color: #fff;
+        font-family: 'Patrick Hand';
+        font-size: 1.5rem;
+        letter-spacing: 0px;
+        border: 2px solid $color-primary;
+        color: $color-primary;
+    }
+
+    .book__button {
+        flex: 2;
+        margin-right: 20px;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        background-color: $color-primary;
+        font-family: 'Patrick Hand';
+        font-size: 1.5rem;
+        letter-spacing: 0px;
+        color: #fff;
+    }
+
+}
+
+////////////Feature area style
+
+.feature__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid $color-grey;
+    padding: 5px 20px 5px 5px;
+    flex-wrap: wrap;
+    margin-right: 20px;
+
+    @include respond(tab-port){
+        margin-bottom: 30px;
+    }
+   
+
+    &--heading{
+        font-size: 1.1rem;
+        font-weight: bold;
+
+        @include respond(tab-land){
+            font-size: 1rem;
+        }
+    }
+
+    .point__count {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        color: #8A7A00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        background-image: linear-gradient(to right, #FFE30D, #FFEB4F);
+        font-weight: bold;
+        margin-right: 20px;
+    }
+
+}
+
+.feature__item--round {
+    border-radius: 50px;
+}
+
+.feature__item--rect {
+    border-radius: 50px 10px 10px 50px;
+}
+
+.marker {
+    width: 50px;
+    height: 5px;
+    background-color: #A0E467;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.feature__area {
+    font-family: 'Patrick Hand';
+
+    .feature__heading {
+
+    }
+
+    .feature__content {
+
+        .upper-row {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+
+            @include respond(tab-port){
+                display: block;
+                
+                .goals__section {
+                    margin-bottom: 30px;
+                }
+
+                .badges__section {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .goals {
+                background-color: #6188EA;
+                width: 80px;
+                text-align: center;
+                border-radius: 10px;
+                color: #fff;
+                margin-bottom: 20px;
+                
+                
+            }
+
+            .badges {
+                background-color: #A0E467;
+                width: 80px;
+                text-align: center;
+                border-radius: 10px;
+                color: #fff;
+                margin-bottom: 20px;
+                
+            }
+            
+        }
+
+        .lower-row {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+
+            @include respond(tab-port){
+                display: block;
+            }
+
+            .badges {
+                background-color:#AF70FC;
+                width: 80px;
+                text-align: center;
+                border-radius: 10px;
+                color: #fff;
+                margin-bottom: 20px;
+                
+            }
+        }
+
+    }
+
+    .feature__subcontent {
+        p {
+            font-size: 1rem;
+            color: $color-grey-dark;
+        }
+    }
+}
+
+//Assignments style
+
+.assignments__area {
+
+    .card__area {
+        display: flex;
+    }
+
+    .card {
+        width: 300px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1rem rgba(109, 109, 109, 0.205);
+        margin-right: 20px;
+
+         &--image {
+             background-color: #F7F7F7;
+             position: relative;
+             overflow: hidden;
+             img {
+                 height: 200px;
+             }
+         }
+
+         &--content {
+             padding: 40px 20px;
+
+            h2 {
+                font-family: 'Lato';
+                font-weight: 400;
+            }
+
+            .arrow {
+                float: right;
+            }
+         }
+
+         .layer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+        }
+
+        .layer1 {
+            background-color: #9952fd98;
+        }
+
+        .layer2 {
+            background-color: #339db393;
+        }
+    }
+}
+
+//guide style
+
+.guide__section {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    .guide__card {
+        background: #e3f8fa;
+        padding: 40px 20px;
+        flex: 1;
+
+        &:not(:last-child){
+            margin-right: 10px;
+        }
+
+        i {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: $color-primary;
+        }
+        .card__content {
+
+            h5 {
+                font-family: 'Lato';
+                text-transform: uppercase;
+                margin-bottom: 10px;
+
+            }
+
+            p {
+                font-family: 'Lato';
+                text-transform: uppercase;
+                font-size: 0.7rem;
+                line-height: 1.1rem;
+                color: $color-grey-dark;
+            }
+
+            .step__heading {
+                margin-bottom: 10px;
+                font-size: 0.9rem;
+                font-weight: bold;
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+.student__section{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+
+    .backdrop {
+        object-fit: contain;
+        width: 100%;
+        filter: blur(2px);
+        opacity: 0.5;
+    }
+
+    .mobilescreen {
+        position: absolute;
+        width: 30%;
+        top: 0px;
+        z-index: 10;
+        left: 50%;
+        transform: translate(-50%,0%);
+    }
+}
+
+//footer style
+
+footer {
+    background: #635D5D;
+    color: #fff;
+
+    .footer__button-area {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__button {
+        padding:10px 40px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background: $color-primary;
+        color: #fff;
+        font-family: 'Patrick Hand';
+        font-size: 1.3rem;
+        margin: 50px 0;
+    }
+
+    .footer__nav {
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+
+        p {
+            font-size: 0.6rem;
+            color: $color-grey;
+        }
+
+        &--item {
+            h5 {
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+        }
+
+        .nav__item {
+            list-style: none;
+            padding: 5px 0;
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: $color-grey;
+
+            i {
+                font-size: 1.3rem;
+                margin-right: 10px;
+            }
+
+        }
+
+        .social--icon {
+            i {
+                font-size: 2rem;
+                
+                &:not(:last-child){
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .footer__bottom {
+        background-color: #5A5555;
+        padding: 10px;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+}
